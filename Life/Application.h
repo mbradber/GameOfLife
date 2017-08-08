@@ -4,6 +4,7 @@
 class TigrSystem;
 class TigrRenderer;
 class Simulation;
+class Camera;
 
 class Application {
 public:
@@ -14,6 +15,7 @@ public:
 private:
     TigrSystem *mSystem;
     TigrRenderer *mRenderer;
+    Camera *mCamera;
 };
 
 

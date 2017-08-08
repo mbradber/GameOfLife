@@ -2,17 +2,24 @@
 #include "TigrSystem.h"
 #include "TigrRenderer.h"
 #include "Simulation.h"
+#include "Camera.h"
 #include <vector> // TODO: remove me
 
 Application::Application(TigrSystem *system)
 : mSystem(system)
+, mRenderer(nullptr)
+, mCamera(nullptr)
 {
-    mRenderer = mSystem->makeRenderer();
+    int windowWidth, windowHeight;
+    mSystem->getWindowDimensions(windowWidth, windowHeight);
+    mCamera = new Camera(0, 0, windowWidth, windowHeight, 1.f, 2);
+    mRenderer = mSystem->makeRenderer(mCamera);
 }
 
 Application::~Application() {
-    delete mSystem;
     delete mRenderer;
+    delete mCamera;
+    delete mSystem;
 }
 
 void Application::run(Simulation* sim) {
@@ -22,7 +29,7 @@ void Application::run(Simulation* sim) {
         float delta = mSystem->getDelta();
         elapsed += delta;
         
-        if (elapsed >= 0.2f) {
+        if (elapsed >= 1.f) {
             mRenderer->clear(80, 180, 255);
             
             sim->step();

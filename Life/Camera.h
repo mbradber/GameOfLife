@@ -12,15 +12,18 @@ enum class Direction {
 
 class Camera {
 public:
-    Camera(float x, float y, life_t width, life_t height, float speed);
+    Camera(int x, int y, int width, int height, float speed, int zoom);
     void move(Direction d, float dt);
+    CellLocation toScreenSpace(const CellLocation& cell) const;
+    int getZoom() const { return mZoom; }
     
 private:
-    float mX;
-    float mY;
-    life_t mWidth;
-    life_t mHeight;
+    int mX;
+    int mY;
+    int mWidth;
+    int mHeight;
     float mSpeed;
+    int mZoom;
 };
 
 

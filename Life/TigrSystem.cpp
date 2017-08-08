@@ -12,8 +12,8 @@ TigrSystem::~TigrSystem() {
     tigrFree(mScreen);
 }
 
-TigrRenderer* TigrSystem::makeRenderer() const {
-    return new TigrRenderer(mScreen);
+TigrRenderer* TigrSystem::makeRenderer(Camera *camera) const {
+    return new TigrRenderer(mScreen, camera);
 }
 
 void TigrSystem::update() {
@@ -42,4 +42,9 @@ bool TigrSystem::moveDown() const {
 
 bool TigrSystem::isRunning() const {
     return !( tigrClosed(mScreen) || tigrKeyDown(mScreen, TK_ESCAPE) );
+}
+
+void TigrSystem::getWindowDimensions(int& outWidth, int& outHeight) const {
+    outWidth = mScreen->w;
+    outHeight = mScreen->h;
 }
