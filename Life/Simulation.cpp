@@ -50,6 +50,22 @@ void Simulation::printState() const {
     }
 }
 
+std::vector<CellLocation> Simulation::getCells() const {
+    std::vector<CellLocation> locations;
+    
+    for (CellSet::const_iterator x_itr = mLiveSet.begin(); x_itr != mLiveSet.end(); ++x_itr) {
+        unordered_set<life_t> y_set = x_itr->second;
+        for (unordered_set<life_t>::const_iterator y_itr = y_set.begin(); y_itr != y_set.end(); ++y_itr) {
+            life_t lx = x_itr->first;
+            life_t ly = *y_itr;
+            
+            locations.push_back(std::make_pair(lx, ly));
+        }
+    }
+    
+    return locations;
+}
+
 void Simulation::step() {
     CellSet deadSet;
     CellMap candidateMap;

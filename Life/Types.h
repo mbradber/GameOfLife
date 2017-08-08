@@ -7,5 +7,6 @@
 typedef int64_t life_t;
 typedef std::unordered_map< life_t, std::unordered_set<life_t> > CellSet;
 typedef std::unordered_map< life_t, std::unordered_map<life_t, size_t> > CellMap;
+typedef std::pair<life_t, life_t> CellLocation;
 
 #endif /* Types_h */

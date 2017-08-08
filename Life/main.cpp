@@ -19,9 +19,11 @@ int main(int argc, const char * argv[]) {
         string s;
         if (!getline(inf, s)) break;
         
-        life_t x = 0, y = 0;
-        sscanf(s.c_str(), "%lld,%lld", &x, &y);
-        sim.addCell(x, y);
+        if (!s.empty()) {
+            life_t x = 0, y = 0;
+            sscanf(s.c_str(), "%lld,%lld", &x, &y);
+            sim.addCell(x, y);
+        }
     }
     
 //    cout << "Live cells at generation 0" << endl;
