@@ -24,7 +24,7 @@ int main(int argc, const char * argv[]) {
     int64_t t2 = LLONG_MAX;
     
     
-    ifstream inf("state_test.in");
+    ifstream inf("state.in");
     if (!inf) {
         cerr << "Could not open state.in for reading" << endl;
     }
