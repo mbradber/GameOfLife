@@ -7,6 +7,8 @@
 
 using namespace std;
 
+#define HEADLESS 0
+
 int main(int argc, const char * argv[]) {
     ifstream inf("state.in");
     if (!inf) {
@@ -26,20 +28,22 @@ int main(int argc, const char * argv[]) {
         }
     }
     
-//    cout << "Live cells at generation 0" << endl;
-//    sim.printState();
-//    
-//    // execute N generations...
-//    size_t numGenerations = 1;
-//    for (size_t i = 0; i < numGenerations; ++i) {
-//        sim.step();
-//        
-//        // next generation has been simulated
-//        cout << "Live cells at generation " << i+1 << endl;
-//        sim.printState();
-//    }
+#if HEADLESS
+    cout << "Live cells at generation 0" << endl;
+    sim.printState();
     
+    // execute N generations...
+    size_t numGenerations = 1;
+    for (size_t i = 0; i < numGenerations; ++i) {
+        sim.step();
+        
+        // next generation has been simulated
+        cout << "Live cells at generation " << i+1 << endl;
+        sim.printState();
+    }
+#else
     Application(new TigrSystem(400, 300)).run(&sim);
+#endif
     
     return 0;
 }

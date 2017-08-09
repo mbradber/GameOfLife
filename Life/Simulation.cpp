@@ -38,7 +38,8 @@ void Simulation::removeCell(CellSet &cs, life_t x, life_t y) {
     }
 }
 
-void Simulation::printState() const {
+int Simulation::printState() const {
+    int numCells = 0;
     for (CellSet::const_iterator x_itr = mLiveSet.begin(); x_itr != mLiveSet.end(); ++x_itr) {
         unordered_set<life_t> y_set = x_itr->second;
         for (unordered_set<life_t>::const_iterator y_itr = y_set.begin(); y_itr != y_set.end(); ++y_itr) {
@@ -46,8 +47,12 @@ void Simulation::printState() const {
             life_t ly = *y_itr;
             
             cout << lx << "," << ly << endl;
+            
+            numCells++;
         }
     }
+    
+    return numCells;
 }
 
 std::vector<CellLocation> Simulation::getCells() const {

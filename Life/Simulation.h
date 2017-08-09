@@ -7,13 +7,8 @@
 class Simulation {
 public:
     void addCell(life_t x, life_t y);
-    void printState() const;
+    int printState() const;
     void step();
-    
-    /* iteration */
-    //void resetIterator();
-    //bool hasNext() const;
-    //CellLocation nextCell();
     
     // TODO: implement proper iterator - quick hack to grab cell locations
     std::vector<CellLocation> getCells() const;
