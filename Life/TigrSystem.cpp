@@ -25,19 +25,19 @@ float TigrSystem::getDelta() const {
 }
 
 bool TigrSystem::moveLeft() const {
-    return tigrKeyHeld(mScreen, TK_LEFT);
+    return tigrKeyHeld(mScreen, 'A');
 }
 
 bool TigrSystem::moveRight() const {
-    return tigrKeyHeld(mScreen, TK_RIGHT);
+    return tigrKeyHeld(mScreen, 'D');
 }
 
 bool TigrSystem::moveUp() const {
-    return tigrKeyHeld(mScreen, TK_UP);
+    return tigrKeyHeld(mScreen, 'W');
 }
 
 bool TigrSystem::moveDown() const {
-    return tigrKeyHeld(mScreen, TK_DOWN);
+    return tigrKeyHeld(mScreen, 'S');
 }
 
 bool TigrSystem::isRunning() const {

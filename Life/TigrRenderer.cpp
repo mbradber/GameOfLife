@@ -18,22 +18,10 @@ void TigrRenderer::renderCells(const std::vector<CellLocation>& cellLocations) {
         CellLocation screenCell = mCamera->toScreenSpace(cell);
         int zoom = mCamera->getZoom();
         
-//        int cell_x = (int)cell.first;
-//        int cell_y = (int)cell.second;
-//        
-//        // subtract camera position...
-//        
-//        // add origin offset
-//        cell_x += 160 / CELL_SIZE;
-//        cell_y += 120 / CELL_SIZE;
-//        
-//        // flip y
-//        cell_y = 240 / CELL_SIZE - cell_y;
-//        
-//        // multiply by scale
-//        cell_x *= CELL_SIZE;
-//        cell_y *= CELL_SIZE;
-        
         tigrFill(mScreen, (int)screenCell.first, (int)screenCell.second, zoom, zoom, tigrRGB(255, 255, 255));
     }
+}
+
+void TigrRenderer::renderText(int x, int y, const char *text) {
+    tigrPrint(mScreen, tfont, x, y, tigrRGBA(0xff,0xff,0xff,0xff), text);
 }

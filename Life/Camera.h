@@ -18,8 +18,8 @@ public:
     int getZoom() const { return mZoom; }
     
 private:
-    int mX;
-    int mY;
+    float mX;
+    float mY;
     int mWidth;
     int mHeight;
     float mSpeed;

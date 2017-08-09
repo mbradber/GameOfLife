@@ -16,6 +16,8 @@ private:
     TigrSystem *mSystem;
     TigrRenderer *mRenderer;
     Camera *mCamera;
+    int mWindowWidth;
+    int mWindowHeight;
 };
 
 

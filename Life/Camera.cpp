@@ -34,6 +34,8 @@ CellLocation Camera::toScreenSpace(const CellLocation& cell) const {
     life_t cell_y = cell.second;
     
     // subtract camera position...
+    cell_x -= mX;
+    cell_y -= mY;
     
     // add origin offset
     cell_x += (mWidth / 2) / mZoom;

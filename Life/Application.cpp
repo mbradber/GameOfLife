@@ -9,10 +9,11 @@ Application::Application(TigrSystem *system)
 : mSystem(system)
 , mRenderer(nullptr)
 , mCamera(nullptr)
+, mWindowWidth(0)
+, mWindowHeight(0)
 {
-    int windowWidth, windowHeight;
-    mSystem->getWindowDimensions(windowWidth, windowHeight);
-    mCamera = new Camera(0, 0, windowWidth, windowHeight, 1.f, 2);
+    mSystem->getWindowDimensions(mWindowWidth, mWindowHeight);
+    mCamera = new Camera(0, 0, mWindowWidth, mWindowHeight, 20.f, 2);
     mRenderer = mSystem->makeRenderer(mCamera);
 }
 
@@ -29,15 +30,28 @@ void Application::run(Simulation* sim) {
         float delta = mSystem->getDelta();
         elapsed += delta;
         
+        if (mSystem->moveLeft())
+            mCamera->move(Direction::LEFT, delta);
+        if (mSystem->moveRight())
+            mCamera->move(Direction::RIGHT, delta);
+        if (mSystem->moveUp())
+            mCamera->move(Direction::UP, delta);
+        if (mSystem->moveDown())
+            mCamera->move(Direction::DOWN, delta);
+        
+        mRenderer->clear(46, 89, 137);
+        
         if (elapsed >= 1.f) {
-            mRenderer->clear(80, 180, 255);
-            
             sim->step();
             elapsed = 0.f;
-            
-            std::vector<CellLocation> cellLocations = sim->getCells();
-            mRenderer->renderCells(cellLocations);
         }
+        
+        std::vector<CellLocation> cellLocations = sim->getCells();
+        mRenderer->renderCells(cellLocations);
+        
+        // render hint text
+        float bottomRenderLine = 0.95f * mWindowHeight;
+        mRenderer->renderText(10, bottomRenderLine, "WASD Camera");
         
         mSystem->update();
     }

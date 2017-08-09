@@ -12,6 +12,7 @@ public:
     TigrRenderer(Tigr *screen, Camera *camera);
     void clear(unsigned char r, unsigned char g, unsigned char b);
     void renderCells(const std::vector<CellLocation>& cellLocations);
+    void renderText(int x, int y, const char *text);
 private:
     Tigr *mScreen;
     Camera *mCamera;
