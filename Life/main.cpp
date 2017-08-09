@@ -39,7 +39,7 @@ int main(int argc, const char * argv[]) {
 //        sim.printState();
 //    }
     
-    Application(new TigrSystem(480, 360)).run(&sim);
+    Application(new TigrSystem(400, 300)).run(&sim);
     
     return 0;
 }

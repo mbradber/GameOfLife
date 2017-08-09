@@ -4,6 +4,7 @@
 #include "Simulation.h"
 #include "Camera.h"
 #include <vector> // TODO: remove me
+#include <iostream>
 
 Application::Application(TigrSystem *system)
 : mSystem(system)
@@ -41,11 +42,12 @@ void Application::run(Simulation* sim) {
         
         mRenderer->clear(46, 89, 137);
         
-        if (elapsed >= 1.f) {
+        if (elapsed >= 0.2) {
             sim->step();
             elapsed = 0.f;
         }
         
+        // TODO: implement iterator, this copy op is expensive
         std::vector<CellLocation> cellLocations = sim->getCells();
         mRenderer->renderCells(cellLocations);
         

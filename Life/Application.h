@@ -13,6 +13,7 @@ public:
     void run(Simulation *sim);
     
 private:
+    // TODO: replace with ISystem & IRender interface to allow for different backends
     TigrSystem *mSystem;
     TigrRenderer *mRenderer;
     Camera *mCamera;

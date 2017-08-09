@@ -1,0 +1,312 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C682F6351F36D64900EBD7B2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C682F6341F36D64900EBD7B2 /* main.cpp */; };
+		C682F66E1F396BE200EBD7B2 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C682F6691F396BE200EBD7B2 /* Camera.cpp */; };
+		C682F66F1F396BE200EBD7B2 /* Simulation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C682F66B1F396BE200EBD7B2 /* Simulation.cpp */; };
+		C682F6721F396C4D00EBD7B2 /* TigrSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C682F6711F396C4D00EBD7B2 /* TigrSystem.cpp */; };
+		C682F6751F396CDA00EBD7B2 /* tigr.c in Sources */ = {isa = PBXBuildFile; fileRef = C682F6731F396CDA00EBD7B2 /* tigr.c */; };
+		C682F67C1F39754F00EBD7B2 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C682F67B1F39754F00EBD7B2 /* OpenGL.framework */; };
+		C682F67E1F39755500EBD7B2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C682F67D1F39755500EBD7B2 /* Cocoa.framework */; };
+		C682F6811F39759400EBD7B2 /* TigrRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C682F6801F39759400EBD7B2 /* TigrRenderer.cpp */; };
+		C682F6831F39773500EBD7B2 /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C682F6821F39773500EBD7B2 /* Application.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C682F62F1F36D64800EBD7B2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C682F6311F36D64900EBD7B2 /* Life */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Life; sourceTree = BUILT_PRODUCTS_DIR; };
+		C682F6341F36D64900EBD7B2 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C682F6691F396BE200EBD7B2 /* Camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Camera.cpp; sourceTree = "<group>"; };
+		C682F66A1F396BE200EBD7B2 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
+		C682F66B1F396BE200EBD7B2 /* Simulation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Simulation.cpp; sourceTree = "<group>"; };
+		C682F66C1F396BE200EBD7B2 /* Simulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Simulation.h; sourceTree = "<group>"; };
+		C682F66D1F396BE200EBD7B2 /* Types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Types.h; sourceTree = "<group>"; };
+		C682F6701F396C3A00EBD7B2 /* TigrSystem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TigrSystem.h; sourceTree = "<group>"; };
+		C682F6711F396C4D00EBD7B2 /* TigrSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TigrSystem.cpp; sourceTree = "<group>"; };
+		C682F6731F396CDA00EBD7B2 /* tigr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tigr.c; sourceTree = "<group>"; };
+		C682F6791F39753C00EBD7B2 /* tigr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tigr.h; sourceTree = "<group>"; };
+		C682F67B1F39754F00EBD7B2 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		C682F67D1F39755500EBD7B2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		C682F67F1F39757B00EBD7B2 /* TigrRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TigrRenderer.h; sourceTree = "<group>"; };
+		C682F6801F39759400EBD7B2 /* TigrRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TigrRenderer.cpp; sourceTree = "<group>"; };
+		C682F6821F39773500EBD7B2 /* Application.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Application.cpp; sourceTree = "<group>"; };
+		C682F6841F39774100EBD7B2 /* Application.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Application.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C682F62E1F36D64800EBD7B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C682F67E1F39755500EBD7B2 /* Cocoa.framework in Frameworks */,
+				C682F67C1F39754F00EBD7B2 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C682F6281F36D64800EBD7B2 = {
+			isa = PBXGroup;
+			children = (
+				C682F6331F36D64900EBD7B2 /* Life */,
+				C682F6321F36D64900EBD7B2 /* Products */,
+				C682F67A1F39754F00EBD7B2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C682F6321F36D64900EBD7B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C682F6311F36D64900EBD7B2 /* Life */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C682F6331F36D64900EBD7B2 /* Life */ = {
+			isa = PBXGroup;
+			children = (
+				C682F6341F36D64900EBD7B2 /* main.cpp */,
+				C682F66D1F396BE200EBD7B2 /* Types.h */,
+				C682F6841F39774100EBD7B2 /* Application.h */,
+				C682F6821F39773500EBD7B2 /* Application.cpp */,
+				C682F66A1F396BE200EBD7B2 /* Camera.h */,
+				C682F6691F396BE200EBD7B2 /* Camera.cpp */,
+				C682F66C1F396BE200EBD7B2 /* Simulation.h */,
+				C682F66B1F396BE200EBD7B2 /* Simulation.cpp */,
+				C682F6701F396C3A00EBD7B2 /* TigrSystem.h */,
+				C682F6711F396C4D00EBD7B2 /* TigrSystem.cpp */,
+				C682F67F1F39757B00EBD7B2 /* TigrRenderer.h */,
+				C682F6801F39759400EBD7B2 /* TigrRenderer.cpp */,
+				C682F6791F39753C00EBD7B2 /* tigr.h */,
+				C682F6731F396CDA00EBD7B2 /* tigr.c */,
+			);
+			path = Life;
+			sourceTree = "<group>";
+		};
+		C682F67A1F39754F00EBD7B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C682F67D1F39755500EBD7B2 /* Cocoa.framework */,
+				C682F67B1F39754F00EBD7B2 /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C682F6301F36D64800EBD7B2 /* Life */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C682F6381F36D64900EBD7B2 /* Build configuration list for PBXNativeTarget "Life" */;
+			buildPhases = (
+				C682F62D1F36D64800EBD7B2 /* Sources */,
+				C682F62E1F36D64800EBD7B2 /* Frameworks */,
+				C682F62F1F36D64800EBD7B2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Life;
+			productName = Life;
+			productReference = C682F6311F36D64900EBD7B2 /* Life */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C682F6291F36D64800EBD7B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = macoberry;
+				TargetAttributes = {
+					C682F6301F36D64800EBD7B2 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = NZ6X694V2Y;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C682F62C1F36D64800EBD7B2 /* Build configuration list for PBXProject "Life" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C682F6281F36D64800EBD7B2;
+			productRefGroup = C682F6321F36D64900EBD7B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C682F6301F36D64800EBD7B2 /* Life */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C682F62D1F36D64800EBD7B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C682F66F1F396BE200EBD7B2 /* Simulation.cpp in Sources */,
+				C682F66E1F396BE200EBD7B2 /* Camera.cpp in Sources */,
+				C682F6721F396C4D00EBD7B2 /* TigrSystem.cpp in Sources */,
+				C682F6751F396CDA00EBD7B2 /* tigr.c in Sources */,
+				C682F6811F39759400EBD7B2 /* TigrRenderer.cpp in Sources */,
+				C682F6351F36D64900EBD7B2 /* main.cpp in Sources */,
+				C682F6831F39773500EBD7B2 /* Application.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C682F6361F36D64900EBD7B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C682F6371F36D64900EBD7B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C682F6391F36D64900EBD7B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = NZ6X694V2Y;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C682F63A1F36D64900EBD7B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = NZ6X694V2Y;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C682F62C1F36D64800EBD7B2 /* Build configuration list for PBXProject "Life" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C682F6361F36D64900EBD7B2 /* Debug */,
+				C682F6371F36D64900EBD7B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C682F6381F36D64900EBD7B2 /* Build configuration list for PBXNativeTarget "Life" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C682F6391F36D64900EBD7B2 /* Debug */,
+				C682F63A1F36D64900EBD7B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C682F6291F36D64800EBD7B2 /* Project object */;
+}
